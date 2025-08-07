@@ -1,0 +1,28 @@
+body{
+    color: blue;
+}
+
+
+.menor{
+    background-color: transparent;
+}
+
+.menor.destaque{
+    background-color: transparent;
+}
+
+
+.destaque{
+    color: red;
+    background-color: yellow;
+}
+
+h1.destaque{
+    background-color: orange;
+}
+
+h2,h3{
+    color: green;
+}
+
+

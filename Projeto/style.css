@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+body{
+
+    background-color: rgb(59, 59, 59);
+    color: white;
+    background-image: url(images/BackgroundSpace.jpg);
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 170px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(12, 12, 12);
+    margin-bottom: 20px;
+    padding: 0 50px;
+}
+
+.links{
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(187, 185, 185);
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-right: 20px;
+}
+
+.logo{
+    margin-right: 50%;
+    margin-left: 10%;
+}
+
+.homeTitulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.mainIntro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 170px;
+}
+
+.Titulo{
+    font-size: 50px;
+}
+
+.homeTitulo h1, .homeTitulo p {
+    margin-bottom: 15px;
+}
+
+.brilhoVerde {
+    color: #00ff88;
+    text-shadow: 0 0 2px #00ff8855, 0 0 4px #00ff8877, 0 0 6px #00ff88aa;
+    animation: brilho 3s infinite alternate;
+}
+
+@keyframes brilho {
+    from {
+        text-shadow: 0 0 2px #00ff8855, 0 0 4px #00ff8877, 0 0 6px #00ff88aa;
+    }
+    to {
+        text-shadow: 0 0 4px #00ff8866, 0 0 6px #00ff8888, 0 0 10px #00ff88aa;
+    }
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: -10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 200px;
+    position: relative; 
+    bottom: auto;
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 40px;
+    opacity: 0.6;
+}
+
+
+
+
+button{
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    height:100px ;
+    width: 200px;
+    margin-top: 30px;
+    background-color: rgb(31, 161, 31);
+}
+
+.botaoInscrever{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+button:hover {
+    background-color: #04c23d;
+    transform: scale(1.01);
+}
+
+
+
+.sobreMain {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    color: white;
+    background-color: #0c0c0c;
+}
+
+
+.secao {
+    margin-bottom: 30px;
+}
+
+.secao h2 {
+    font-size: 1.8em;
+    color: #00ff88;
+}
+
+.secao ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.lema {
+    font-size: 1.2em;
+    text-align: center;
+    color: #00ff88;
+}
+
+
+.telaRegistro{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px; 
+    margin: 50px auto; 
+    padding: 20px;
+    background-color: #0c0c0c; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.telaRegistro label {
+    font-size: 1.2em;
+    margin-top: 20px; 
+    margin-bottom: 5px; 
+    color: #00ff88;
+}
+
+.telaRegistro input {
+
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #00ff88; 
+    background-color: #2a2a2a; 
+    color: white;
+    border-radius: 8px;
+    font-size: 17px;
+    box-sizing: border-box; 
+    outline: none; 
+
+
+    transition: border-color 0.3s ease; 
+}
+
+
+.telaRegistro input:focus {
+    border-color: #00ffaa; 
+    box-shadow: 0 0 8px rgba(0, 255, 136, 0.5);
+}
+
+.telaRegistro button{
+    width: 100%;
+    padding: 15px;
+}
+
+
+
+
+.footerSection{
+    font-size: small;
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 40px;
+}
+
+
+
