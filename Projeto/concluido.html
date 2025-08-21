@@ -1,34 +1,54 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Concluido - MetaEnem</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
     <header class="cabecalho">
         <div class="menu">
-            <a class="logo" href=""><img src="images/MetaEnemlogoBlack.png" width="80" height="60" alt="logo metaEnem"></a>
+            <a class="logo" href="index.html"><img src="images/MetaEnemLogo.png" width="150" alt="logo metaEnem"></a>
         </div>
 
         <nav class="menu">
             <a class="links" href="index.html">Home</a>
 
-            <a class="links"   href="#sobreMetaEnem">Sobre</a>
+            <a class="links"   href="index.html">Sobre</a>
             
             <a class="links" href="registro.html">Registro</a>
 
-            <a class="links" href="#contato">Contato</a>
+            <a class="links" href="index.html">Contato</a>
         </nav>
 
     </header>
 
 
-    <main>
-        <h1>Concluído</h1>
-        <p>seja bem vindo à MetaEnem, entraremos em contato em breve informando sobre as próximas aulas, fique ligado e foco nos estudos 🤓 ☝</p>
+    <main class="mainConcluido">
+        <h1 class="Titulo">Concluído</h1>
+        <p>seja bem vindo à <strong>MetaEnem</strong></p>
+        <p>entraremos em contato em breve informando sobre as próximas aulas, fique ligado e foco nos estudos 🤓 ☝</p>
+        <a href="#secaoComentarios">
+            <button>Avalie-nos</button>
+        </a>
     </main>
+
+    <section id="secaoComentarios" class="comentarios">
+        <h2>Deixe seu Comentário</h2>
+        <div id="divComentario">
+            <textarea name="comentario" id="comentario"  rows="4"></textarea>
+            <button class="botaoComentario" id="enviarComentario">Enviar</button>
+        </div>
+
+
+
+        <h3>Comentários:</h3>
+        <ul class="listaComentarios" id="listaComents"></ul>
+    </section>
+
 
 
 
@@ -50,12 +70,14 @@
 
         <section class="footerSection">
             <h1>Redes</h1>
-            <a href="">Twitter<ap>
-            <a href="">Instagram</a>
-            <a href="">Facebook</a>
-            <a href="">Discord</a>
+            <a href="" class="linkFooter" >Twitter<a>
+            <a href="" class="linkFooter" >Instagram</a>
+            <a href="" class="linkFooter" >Facebook</a>
+            <a href="" class="linkFooter" >Discord</a>
         </section>
     </footer>
     
 </body>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script> <!--Efeito de Confete-->
+<script type="module" src="Concluido.js"></script>
 </html>

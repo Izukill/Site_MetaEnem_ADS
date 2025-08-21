@@ -12,12 +12,10 @@ html {
 
 
 body{
-
     background-color: rgb(59, 59, 59);
     color: white;
     background-image: url(images/BackgroundSpace.jpg);
-    justify-content: center;
-    align-items: center;
+
 }
 
 main{
@@ -33,7 +31,7 @@ main{
 
 .cabecalho{
     display: flex;
-    height: 70px;
+    height: 80px;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(12, 12, 12);
@@ -74,6 +72,21 @@ main{
     margin-left: 150px;
     margin-right: 150px;
     margin-bottom: 170px;
+}
+
+.mainConcluido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0;
+    margin: 290px;
+    
+}
+
+.mainConcluido h1{
+    margin-bottom: 30px;
 }
 
 .Titulo{
@@ -121,6 +134,11 @@ footer {
     opacity: 0.6;
 }
 
+.linkFooter{
+    color: white;
+    text-decoration: none;
+}
+
 
 
 
@@ -132,7 +150,12 @@ button{
     height:100px ;
     width: 200px;
     margin-top: 30px;
+    transition: border-color 0.5s ease; 
     background-color: rgb(31, 161, 31);
+}
+.buttonSaibaMais{
+    margin-top: 100px;
+    margin-bottom: 200px;
 }
 
 .botaoInscrever{
@@ -143,6 +166,9 @@ button{
 button:hover {
     background-color: #04c23d;
     transform: scale(1.01);
+    border-color: #00ffaa; 
+    box-shadow: 0 0 8px rgba(0, 255, 136, 0.5);
+
 }
 
 
@@ -154,6 +180,49 @@ button:hover {
     color: white;
     background-color: #0c0c0c;
 }
+
+.duvidaSection{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 30px 30px;
+    color: white;
+    background-color:#0c0c0c ;
+
+}
+
+.duvidaButton{
+
+    width: 800px;
+    color: white;
+    max-width: 100%;
+    transition: border-color 0.5s ease; 
+    background-color: #0c0c0c;
+
+}
+
+.duvidaButton:hover{
+    background-color: #0c0c0c;
+    border-color: #00ffaa; 
+    box-shadow: 0 0 8px rgba(0, 255, 136, 0.5);
+}
+
+.seta {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    margin-left: 10px; 
+    font-size: 30px; 
+}
+
+
+.seta.rotacionada {
+    transform: rotate(180deg);
+}
+
+
 
 
 .secao {
@@ -181,7 +250,8 @@ button:hover {
     display: flex;
     flex-direction: column;
     max-width: 500px; 
-    margin: 50px auto; 
+    margin: 50px auto;
+    margin-bottom: 200px; 
     padding: 20px;
     background-color: #0c0c0c; 
     border-radius: 10px; 
@@ -223,7 +293,83 @@ button:hover {
 }
 
 
+.comentarios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
 
+.comentarios h2 {
+    font-size: 1.8rem;
+    color: #d9dde0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.comentarios textarea {
+    width: 90%;
+    height: 10px;
+    padding: 12px;
+    border: 1px solid #20772c;
+    border-radius: 8px;
+    resize: none;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+.comentarios textarea:focus {
+    border-color: #00ffaa;
+    outline: none;
+}
+
+.comentarios h3 {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    color: #d6d8da;
+}
+
+.listaComentarios {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.listaComentarios button{
+    font-size: 15px;
+    height: 30px;
+    width: 50px;
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.listaComentarios li {
+    display: flex;
+    justify-content: space-between;
+    background-color: #070707;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+#divComentario{
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.botaoComentario{
+    margin-top: 0px;
+    height: 40px;
+    font-size: 20px;
+}
 
 .footerSection{
     font-size: small;
@@ -233,6 +379,3 @@ button:hover {
     justify-content: space-evenly;
     margin-left: 40px;
 }
-
-
-

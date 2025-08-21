@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro - MetaEnem</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
     <header class="cabecalho">
         <div class="menu">
-            <a class="logo" href=""><img src="images/MetaEnemlogoBlack.png" width="80" height="60" alt="logo metaEnem"></a>
+            <a class="logo" href="index.html"><img src="images/MetaEnemLogo.png" width="150" alt="logo metaEnem"></a>
         </div>
 
         <nav class="menu">
@@ -23,19 +24,19 @@
         </nav>
     </header>
 
-    <form action="" method="get" class="telaRegistro">
+    <form action="" method="get" id="formRegistro" class="telaRegistro">
 
         <label for="nome">Nome:</label>
-        <input type="text" required>
+        <input type="text" id="nome" name="nome" required>
 
         <label for="email">Email:</label>
-        <input type="email" required>
+        <input type="email" id="email" name="email" required>
 
         <label for="numero">Número:</label>
-        <input type="tel" required>
+        <input type="tel" id="num" name="num" required>
 
         <div>
-            <button type="button" id="finalRegistro">Inscrever-se</button>
+            <button type="submit" id="finalRegistro">Inscrever-se</button>
         </div>
     </form>
 
@@ -52,17 +53,17 @@
 
         <section class="footerSection">
             <h1>Endereço</h1>
-            <p>Rua blablabla bleble</p>
+            <p>Rua blablabla</p>
             <p>Número 145</p>
             <p>5345-901</p>
         </section>
 
         <section class="footerSection">
             <h1>Redes</h1>
-            <a href="">Twitter<ap>
-            <a href="">Instagram</a>
-            <a href="">Facebook</a>
-            <a href="">Discord</a>
+            <a href="" class="linkFooter">Twitter<ap>
+            <a href="" class="linkFooter">Instagram</a>
+            <a href="" class="linkFooter">Facebook</a>
+            <a href="" class="linkFooter">Discord</a>
         </section>
     </footer>
 
@@ -70,5 +71,5 @@
 
 
 </body>
-<script src="main.js"></script>
+<script src="Registro.js"></script>
 </html>
